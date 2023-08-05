@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML Hackathon Registration</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background: url(https://images.unsplash.com/photo-1495592822108-9e6261896da8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    }
+    .navbar {
+      background-color: black;
+      color: #fff;
+      opacity: 90%;
+    }
+
+    .navbar .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar .nav-link {
+      color: #fff;
+      font-size: 18px;
+    }
+    
+
+    .container1 {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: black;
+      opacity:80%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      color:white;
+    }
+
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .form-group.error input {
+      border-color: #dc3545;
+    }
+
+    .form-group.error span {
+      color: #dc3545;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" style="color:white;" href="#">IRLAB-DAIICT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Leaderboards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<section>
+  <div class="container1">
+    <h2 style="font-weight: bold; text-align: center; ">Registration</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="teamName">Team Name</label>
+        <input type="text" id="teamName" class="form-control" >
+        <span id="teamNameError" class="error"></span>
+      </div>
+      <div class="form-group">
+        <label for="participant1">Participant 1</label>
+        <input type="text" id="participant1" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label for="participant2">Participant 2</label>
+        <input type="text" id="participant2" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label for="participant3">Participant 3</label>
+        <input type="text" id="participant3" class="form-control" >
+      </div>
+      <a href="/selection" class="btn btn-dark">Submit</a>
+    </form>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
